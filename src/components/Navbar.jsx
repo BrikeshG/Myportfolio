@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import useScrollSpy from '../hooks/useScrollSpy';
+import { NAVIGATION } from '../constants';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
-    const navItems = ['home', 'about', 'skills', 'projects', 'education', 'contact'];
+    const navItems = NAVIGATION.map(item => item.href);
     const activeSection = useScrollSpy(navItems, 150);
 
     useEffect(() => {
@@ -36,8 +37,8 @@ export default function Navbar() {
                         <button
                             onClick={() => scrollToSection(item)}
                             className={`relative capitalize text-sm font-medium tracking-wide transition-all duration-300 ${activeSection === item
-                                    ? 'text-purple-400 drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]'
-                                    : 'text-white hover:text-purple-400'
+                                ? 'text-purple-400 drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]'
+                                : 'text-white hover:text-purple-400'
                                 }`}
                         >
                             {item}

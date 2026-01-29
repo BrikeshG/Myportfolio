@@ -1,9 +1,8 @@
-import { useState } from 'react';
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { AnimatePresence, motion, useInView } from 'framer-motion';
+import { useState, useRef } from 'react';
 import { Mail, Send, Calendar, Copy, CheckCircle2, Linkedin } from 'lucide-react';
 import { fadeInUp, slideInLeft, slideInRight } from '../utils/animations';
-import { AnimatePresence } from 'framer-motion';
+import { PERSONAL_INFO, SOCIAL_LINKS, CONTACT_CONFIG } from '../constants';
 
 export default function Contact() {
     const ref = useRef(null);
@@ -22,7 +21,7 @@ export default function Contact() {
         setStatus('sending');
 
         try {
-            const response = await fetch('https://formspree.io/f/meekeqoa', {
+            const response = await fetch(`https://formspree.io/f/${CONTACT_CONFIG.formspreeId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -90,13 +89,13 @@ export default function Contact() {
                             </div>
                             <div className="flex-1">
                                 <p className="text-sm text-gray-400">Email</p>
-                                <a href="mailto:brikeshvikin13@gmail.com" className="text-white hover:text-purple-400 transition-colors">
-                                    brikeshvikin13@gmail.com
+                                <a href={`mailto:${PERSONAL_INFO.email}`} className="text-white hover:text-purple-400 transition-colors">
+                                    {PERSONAL_INFO.email}
                                 </a>
                             </div>
                             <button
                                 onClick={() => {
-                                    navigator.clipboard.writeText('brikeshvikin13@gmail.com');
+                                    navigator.clipboard.writeText(PERSONAL_INFO.email);
                                     setCopied(true);
                                     setTimeout(() => setCopied(false), 2000);
                                 }}
@@ -122,7 +121,7 @@ export default function Contact() {
                         {/* Professional Links */}
                         <div className="flex flex-col sm:flex-row gap-4">
                             <motion.a
-                                href="https://www.linkedin.com/in/brikesh-vikin-gowrish-9804a5398/"
+                                href={SOCIAL_LINKS.linkedin}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.02 }}
@@ -134,7 +133,7 @@ export default function Contact() {
                             </motion.a>
 
                             <motion.a
-                                href="mailto:brikeshvikin13@gmail.com?subject=Schedule a Call&body=Hi Brikesh, I'd like to schedule a call to discuss..."
+                                href={CONTACT_CONFIG.calendarLink}
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
                                 className="flex items-center justify-center gap-2 flex-1 glass border border-white/10 hover:border-cyan-500/50 rounded-xl px-6 py-4 text-white font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20"
@@ -191,8 +190,8 @@ export default function Contact() {
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
                                 className={`w-full bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center gap-2 transition-all duration-300 ${status === 'success' ? 'from-green-500 to-emerald-500 shadow-green-500/50' :
-                                        status === 'error' ? 'from-red-500 to-rose-500 shadow-red-500/50' :
-                                            status === 'sending' ? 'opacity-70 cursor-not-allowed' : 'hover:shadow-2xl hover:shadow-purple-500/50'
+                                    status === 'error' ? 'from-red-500 to-rose-500 shadow-red-500/50' :
+                                        status === 'sending' ? 'opacity-70 cursor-not-allowed' : 'hover:shadow-2xl hover:shadow-purple-500/50'
                                     }`}
                             >
                                 {status === 'sending' ? (

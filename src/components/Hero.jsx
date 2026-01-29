@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { ChevronDown, Download } from 'lucide-react';
 import { fadeInUp, fadeIn } from '../utils/animations';
+import { PERSONAL_INFO, ASSETS, NAVIGATION } from '../constants';
 
 export default function Hero() {
     const [showScrollDown, setShowScrollDown] = useState(true);
@@ -26,7 +27,7 @@ export default function Hero() {
 
     const scrollToNext = () => {
         // Define all sections in order
-        const sections = ['home', 'about', 'skills', 'projects', 'education', 'contact'];
+        const sections = NAVIGATION.map(item => item.href);
 
         // Find current section based on scroll position
         let currentSectionIndex = 0;
@@ -76,7 +77,7 @@ export default function Hero() {
                             className="text-gray-400 text-sm md:text-base mb-4 tracking-widest uppercase"
                             variants={fadeIn}
                         >
-                            Software Engineer
+                            {PERSONAL_INFO.title}
                         </motion.p>
 
                         {/* Massive name with gradient */}
@@ -84,9 +85,9 @@ export default function Hero() {
                             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 gradient-text leading-tight"
                             variants={fadeInUp}
                         >
-                            Brikesh Vikin
+                            {PERSONAL_INFO.name.split(' ').slice(0, 2).join(' ')}
                             <br />
-                            Gowrish
+                            {PERSONAL_INFO.name.split(' ').slice(2).join(' ')}
                         </motion.h1>
 
                         {/* Subtitle */}
@@ -94,7 +95,7 @@ export default function Hero() {
                             className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed"
                             variants={fadeInUp}
                         >
-                            <span className="text-white font-bold">B.E. Computer Science and Engineering</span>
+                            <span className="text-white font-bold">{PERSONAL_INFO.degree}</span>
                             <br className="hidden md:block" />
                             Specializing in <span className="text-purple-400 font-semibold">Java</span>,{' '}
                             <span className="text-cyan-400 font-semibold">Python</span>, and{' '}
@@ -107,8 +108,8 @@ export default function Hero() {
                             variants={fadeInUp}
                         >
                             <motion.a
-                                href="/Brikesh Vikin Gowrish CV.pdf"
-                                download="Brikesh_Vikin_Gowrish_CV.pdf"
+                                href={ASSETS.resume}
+                                download={`Brikesh_Vikin_Gowrish_CV.pdf`}
                                 className="group relative px-8 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-full text-white font-semibold text-lg overflow-hidden w-full sm:w-auto flex items-center justify-center gap-2"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}

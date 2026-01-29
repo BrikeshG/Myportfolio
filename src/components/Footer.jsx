@@ -1,11 +1,12 @@
+import { PERSONAL_INFO, SOCIAL_LINKS } from '../constants';
+import { Mail, Github, Linkedin, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Mail, Github, Linkedin } from 'lucide-react';
 
 export default function Footer() {
     const socialLinks = [
-        { icon: Mail, href: 'mailto:brikeshvikin13@gmail.com', label: 'Email', color: 'hover:text-purple-400' },
-        { icon: Github, href: 'https://github.com/BrikeshG', label: 'GitHub', color: 'hover:text-cyan-400' },
-        { icon: Linkedin, href: 'https://www.linkedin.com/in/brikesh-vikin-gowrish-9804a5398/', label: 'LinkedIn', color: 'hover:text-pink-400' }
+        { icon: Mail, href: `mailto:${PERSONAL_INFO.email}`, label: 'Email', color: 'hover:text-purple-400' },
+        { icon: Github, href: SOCIAL_LINKS.github, label: 'GitHub', color: 'hover:text-cyan-400' },
+        { icon: Linkedin, href: SOCIAL_LINKS.linkedin, label: 'LinkedIn', color: 'hover:text-pink-400' }
     ];
 
     return (
@@ -39,7 +40,7 @@ export default function Footer() {
                     {/* Copyright */}
                     <div className="text-center">
                         <p className="text-gray-400">
-                            © 2026 Brikesh Vikin Gowrish
+                            © {new Date().getFullYear()} {PERSONAL_INFO.name}
                         </p>
                     </div>
                 </div>
