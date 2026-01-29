@@ -1,0 +1,346 @@
+{
+    "about": {
+        "keywords": [
+            "about",
+            "who",
+            "background",
+            "bio",
+            "story",
+            "introduction",
+            "yourself"
+        ],
+        "response": "Brikesh Vikin Gowrish is a Software Engineer with a strong foundation in Computer Science Engineering. He builds applications using Java and Python, creates modern web experiences with React, and deploys solutions on AWS. What drives him is turning complex problems into elegant, user-friendly solutions. He thrives in collaborative environments and is eager to join a forward-thinking team where he can grow, innovate, and make a meaningful impact."
+    },
+    "job_seeking": {
+        "keywords": [
+            "job",
+            "hiring",
+            "position",
+            "opportunity",
+            "opportunities",
+            "full-time",
+            "employment",
+            "work",
+            "career",
+            "looking",
+            "seeking",
+            "available"
+        ],
+        "response": "Yes, Brikesh is actively seeking full-time software engineering opportunities! He's particularly interested in roles where he can:\n\n✅ Work with modern tech stacks (Java, Python, React, Cloud)\n✅ Collaborate with experienced teams\n✅ Contribute to meaningful projects\n✅ Grow his skills in an innovative environment\n\nHe is open to positions in Germany and internationally. You can reach out via email at brikeshvikin13@gmail.com to discuss opportunities!"
+    },
+    "education": {
+        "keywords": [
+            "education",
+            "degree",
+            "university",
+            "study",
+            "studied",
+            "college",
+            "school",
+            "academic",
+            "masters",
+            "bachelor",
+            "passau",
+            "sathyabama"
+        ],
+        "response": "Brikesh's educational background:\n\n🎓 Graduate Coursework in Computer Science\nUniversität Passau, Germany\nApril 2024 – October 2025\n\n🎓 B.E. Computer Science and Engineering\nSathyabama University, India\nJune 2019 – May 2023"
+    },
+    "certifications": {
+        "keywords": [
+            "certification",
+            "certificate",
+            "certified",
+            "credential",
+            "course",
+            "training",
+            "aws",
+            "forage",
+            "deloitte"
+        ],
+        "response": "Brikesh has earned several professional certifications:\n\n✓ AWS Solutions Architecture Job Simulation — Forage\n✓ Technology Job Simulation (Coding & Development) — Deloitte\n✓ AWS CLF-C02 Exam Prep — AWS\n✓ Advanced Java Certification — FITA Academy"
+    },
+    "skills": {
+        "keywords": [
+            "skill",
+            "stack",
+            "tech",
+            "technology",
+            "language",
+            "tool",
+            "framework",
+            "programming",
+            "know",
+            "proficient"
+        ],
+        "response": "Brikesh's technical and professional skills:\n\n💻 Programming: Java, Python\n🌐 Web Development: HTML, CSS, JavaScript, React, Tailwind CSS\n🗄️ Core Concepts: OOP, Data Structures, Algorithms\n🛠️ Tools & IDEs: VS Code, Git, GitHub, Vite\n☁️ Cloud & Infrastructure: AWS EC2, Cloud Basics\n🖥️ Operating Systems: Windows, Linux Basics\n🗣️ Languages: English (Fluent), German (Learning), Tamil & Malayalam (Native)"
+    },
+    "projects": {
+        "keywords": [
+            "project",
+            "work",
+            "build",
+            "built",
+            "portfolio",
+            "app",
+            "application",
+            "developed",
+            "created"
+        ],
+        "response": "Here are some featured projects Brikesh has worked on:\n\n🏥 Healthcare Chatbot (AI-Powered Symptom Assistant)\nHe built an intelligent healthcare chatbot achieving 80% response accuracy and 90% training accuracy using Python, Flask, NLP, and TF-IDF.\n\n🏏 TuS Pfarrkirchen Club (Community & Sports Hub)\nHe developed and deployed a live community platform, achieving #1 Google search ranking for 'cricket pfarrkirchen'.\n\n🤖 AI-Powered Portfolio (Personal Branding Engine)\nHe engineered this sophisticated showcase featuring a custom NLP-based assistant.\n\n☁️ AWS Cloud Practice (EC2 Instance Setup)\nHe configured optimized Windows EC2 environments and reduced deployment time by 25%."
+    },
+    "healthcare_chatbot": {
+        "keywords": [
+            "healthcare",
+            "chatbot",
+            "medical",
+            "symptom",
+            "nlp",
+            "nltk",
+            "flask",
+            "ai"
+        ],
+        "response": "Healthcare Chatbot - AI-Powered Symptom Assistant:\n\nBrikesh built an intelligent healthcare chatbot achieving 80% response accuracy using Python, Flask, NLP preprocessing, and TF-IDF similarity mapping. This project demonstrates his proficiency in natural language processing and machine learning algorithms.\n\nTechnologies: Python, Flask, NLP, NLTK"
+    },
+    "tus_pfarrkirchen": {
+        "keywords": [
+            "tus",
+            "pfarrkirchen",
+            "cricket",
+            "club",
+            "sports",
+            "community",
+            "netlify",
+            "seo",
+            "live"
+        ],
+        "response": "TuS Pfarrkirchen Club - Community & Sports Hub:\n\nBrikesh developed and deployed a live community platform for a local sports organization. He achieved #1 Google search ranking through targeted SEO optimization and custom domain management.\n\nTechnologies: React, Tailwind CSS, Netlify, SEO\nLive Site: https://tus-cricket-pfarrkirchen.de"
+    },
+    "portfolio_project": {
+        "keywords": [
+            "portfolio",
+            "personal",
+            "website",
+            "branding",
+            "chatbot",
+            "vite",
+            "framer"
+        ],
+        "response": "AI-Powered Portfolio - Personal Branding Engine:\n\nBrikesh engineered this digital showcase featuring a custom NLP-based assistant (that's me!) for instant data retrieval. It uses React 18, Vite, and Framer Motion for a premium user experience.\n\nTechnologies: React 18, Vite, Tailwind CSS, NLP Search, Framer Motion"
+    },
+    "aws_project": {
+        "keywords": [
+            "aws",
+            "ec2",
+            "cloud",
+            "infrastructure",
+            "windows",
+            "instance"
+        ],
+        "response": "AWS Cloud Practice - EC2 Instance Setup:\n\nBrikesh configured Windows EC2 instances and implemented cloud infrastructure setup, reducing deployment time by 25%. This project highlights his understanding of cloud computing fundamentals.\n\nTechnologies: AWS EC2, Windows, Cloud Infrastructure"
+    },
+    "java": {
+        "keywords": [
+            "java",
+            "oop",
+            "object-oriented"
+        ],
+        "response": "Brikesh has strong experience with Java, including OOP principles, data structures, and algorithms. He holds an Advanced Java Certification and has built various applications using the language."
+    },
+    "python": {
+        "keywords": [
+            "python",
+            "flask",
+            "nlp",
+            "machine learning"
+        ],
+        "response": "Brikesh is proficient in Python, with experience in Flask, NLP, and machine learning libraries like NLTK. He used Python to build the Healthcare Chatbot project."
+    },
+    "web_development": {
+        "keywords": [
+            "web",
+            "frontend",
+            "react",
+            "javascript",
+            "html",
+            "css",
+            "tailwind"
+        ],
+        "response": "Brikesh's web development skills include:\n• Frontend: React, HTML, CSS, JavaScript (ES6+)\n• Styling: Tailwind CSS, Framer Motion\n• Modern frameworks: React 18 + Vite\n\nThis portfolio itself is a prime example of his frontend expertise!"
+    },
+    "contact": {
+        "keywords": [
+            "contact",
+            "email",
+            "reach",
+            "hire",
+            "github",
+            "linkedin",
+            "resume",
+            "cv",
+            "get in touch"
+        ],
+        "response": "You can reach Brikesh through:\n• Email: brikeshvikin13@gmail.com\n• LinkedIn: https://www.linkedin.com/in/brikesh-vikin-gowrish-9804a5398/\n• GitHub: https://github.com/BrikeshG\n\nYou can find all his contact links in the footer, or click the 'Contact' button in the navigation."
+    },
+    "experience": {
+        "keywords": [
+            "experience",
+            "work",
+            "job",
+            "employment",
+            "professional",
+            "career"
+        ],
+        "response": "Brikesh is an entry-level Software Engineer with hands-on experience in building applications with Java and Python, web development, and cloud infrastructure (AWS EC2). He is now actively seeking full-time opportunities."
+    },
+    "availability": {
+        "keywords": [
+            "hire",
+            "work",
+            "job",
+            "open",
+            "available",
+            "full-time",
+            "part-time",
+            "remote",
+            "hybrid",
+            "role"
+        ],
+        "response": "Yes! Brikesh is currently available for full-time Software Engineering roles. He is comfortable working in remote, hybrid, or on-site environments."
+    },
+    "location": {
+        "keywords": [
+            "where",
+            "from",
+            "location",
+            "relocate",
+            "move",
+            "city",
+            "country",
+            "germany",
+            "india",
+            "live"
+        ],
+        "response": "Brikesh is currently based in Passau, Germany, and is open to relocation within Germany or Europe. He is originally from India."
+    },
+    "languages": {
+        "keywords": [
+            "speak",
+            "language",
+            "english",
+            "german",
+            "tamil",
+            "malayalam",
+            "talk"
+        ],
+        "response": "Brikesh speaks English (Fluent), German (Learning), and his native languages Tamil and Malayalam."
+    },
+    "hobbies": {
+        "keywords": [
+            "hobby",
+            "hobbies",
+            "fun",
+            "free",
+            "time",
+            "interest",
+            "cricket",
+            "play"
+        ],
+        "response": "When Brikesh isn't coding, he enjoys playing cricket, traveling, and photography."
+    },
+    "resume_dl": {
+        "keywords": [
+            "download",
+            "pdf",
+            "resume",
+            "cv",
+            "document",
+            "file"
+        ],
+        "response": "You can download Brikesh's full PDF Resume by clicking the 'Resume' button in the navigation bar."
+    },
+    "meta_bot": {
+        "keywords": [
+            "who",
+            "made",
+            "build",
+            "bot",
+            "you",
+            "created",
+            "assistant",
+            "ai"
+        ],
+        "response": "I am Brikesh's AI Assistant! He built me using React, Tailwind CSS, and custom search logic to help you learn more about his background and work."
+    },
+    "favorite_tech": {
+        "keywords": [
+            "favorite",
+            "best",
+            "love",
+            "tech",
+            "stack",
+            "prefer",
+            "like"
+        ],
+        "response": "Brikesh loves working with React for frontend development and Python for backend logic. He's also exploring Next.js and AWS."
+    },
+    "why_hire_me": {
+        "keywords": [
+            "why",
+            "hire",
+            "should",
+            "reason",
+            "benefit",
+            "value",
+            "strength",
+            "pitch"
+        ],
+        "response": "Here's why you should hire Brikesh:\n\n1. 🚀 **Ready to Build**: He combines a strong CS foundation with practical full-stack skills.\n2. 🧠 **Problem Solver**: He has built AI tools and handled complex infrastructure tasks.\n3. ☁️ **Cloud Native**: He knows how to deploy and manage solutions on AWS.\n4. 🤝 **Professional**: He believes in clean code, clear communication, and accountability."
+    },
+    "working_style": {
+        "keywords": [
+            "style",
+            "work",
+            "collaborate",
+            "team",
+            "soft",
+            "skill",
+            "environment",
+            "culture"
+        ],
+        "response": "Brikesh's working style is collaborative and proactive. He values clear communication, writes clean and documented code, and enjoys solving complex problems in a team setting."
+    },
+    "fast_facts": {
+        "keywords": [
+            "summary",
+            "fact",
+            "quick",
+            "overview",
+            "tl;dr",
+            "short"
+        ],
+        "response": "Here is a quick summary of Brikesh's profile:\n\n• 🎓 **Education**: B.E. CS Graduate (Graduate Coursework at Passau)\n• 📍 **Location**: Passau, Germany (Open to Relocation)\n• 💻 **Top Skills**: Java, Python, React, AWS\n• ✅ **Status**: Seeking Full-time Roles (Available Immediately)\n• 🗣️ **Languages**: English, German, Tamil, Malayalam"
+    },
+    "work_authorization": {
+        "keywords": [
+            "visa",
+            "permit",
+            "authorization",
+            "legal",
+            "citizen",
+            "right to work",
+            "sponsorship"
+        ],
+        "response": "Brikesh is currently in Germany and is eligible for work authorization roles. For international opportunities, he is happy to discuss any necessary relocation or sponsorship requirements."
+    },
+    "notice_period": {
+        "keywords": [
+            "start",
+            "when",
+            "notice",
+            "immediate",
+            "available",
+            "handover"
+        ],
+        "response": "Brikesh has transitioned from his studies to focus on his professional career and is available to start a full-time role immediately."
+    }
+}

@@ -1,0 +1,22 @@
+import { useEffect, useState } from 'react';
+
+export function useParallax() {
+    const [scrollY, setScrollY] = useState(0);
+    const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+        setPrefersReducedMotion(mediaQuery.matches);
+
+        const handleScroll = () => {
+            if (!mediaQuery.matches) {
+                setScrollY(window.scrollY);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    return { scrollY, prefersReducedMotion };
+}

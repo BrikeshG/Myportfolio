@@ -1,0 +1,181 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+/* ============================================
+   THEME CONFIGURATION
+   Custom color palette and design tokens
+   ============================================ */
+@theme {
+  /* Deep blacks */
+  --color-black: #0a0a0a;
+  --color-dark: #1a1a1a;
+
+  /* Vibrant accents */
+  --color-purple: #8b5cf6;
+  --color-cyan: #06b6d4;
+  --color-pink: #ec4899;
+  --color-violet: #6366f1;
+
+  /* Neutrals */
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f5f5f5;
+  --color-gray-400: #a1a1aa;
+  --color-gray-600: #52525b;
+  --color-gray-800: #27272a;
+
+  /* Gradients */
+  --gradient-purple-cyan: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+  --gradient-pink-purple: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+  --gradient-mesh: radial-gradient(at 0% 0%, #8b5cf6 0%, transparent 50%),
+    radial-gradient(at 100% 0%, #06b6d4 0%, transparent 50%),
+    radial-gradient(at 100% 100%, #ec4899 0%, transparent 50%),
+    radial-gradient(at 0% 100%, #6366f1 0%, transparent 50%);
+}
+
+/* ============================================
+   BASE STYLES
+   Global styles and typography
+   ============================================ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-black);
+    color: white;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+  }
+
+  /* Noise texture overlay for premium feel - Optimized performance */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.025;
+    /* Slightly reduced opacity */
+    z-index: 9999;
+    pointer-events: none;
+    transform: translateZ(0);
+    /* Force GPU */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-weight: 700;
+  }
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   Styled scrollbar with gradient
+   ============================================ */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-purple), var(--color-cyan));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--color-pink), var(--color-purple));
+}
+
+/* ============================================
+   GLASSMORPHISM UTILITIES
+   Frosted glass effect components
+   ============================================ */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  /* Slightly reduced for performance */
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateZ(0);
+  will-change: backdrop-filter, transform;
+}
+
+.glass-dark {
+  background: rgba(10, 10, 10, 0.6);
+  backdrop-filter: blur(12px);
+  /* Slightly reduced for performance */
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transform: translateZ(0);
+  will-change: backdrop-filter, transform;
+}
+
+/* ============================================
+   GLOW EFFECTS
+   Colored shadow effects for emphasis
+   ============================================ */
+.glow-purple {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3),
+    0 0 40px rgba(139, 92, 246, 0.2);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3),
+    0 0 40px rgba(6, 182, 212, 0.2);
+}
+
+.glow-pink {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.3),
+    0 0 40px rgba(236, 72, 153, 0.2);
+}
+
+/* ============================================
+   GRADIENT TEXT
+   Multi-color gradient text effect
+   ============================================ */
+.gradient-text {
+  background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  will-change: transform;
+}
+
+/* ============================================
+   GLOBAL UTILITIES
+   Smooth transitions and selection styles
+   ============================================ */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.3);
+  color: white;
+}
+
+/* Hardware Acceleration Utility */
+.hardware-accel {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
+}
+
+.gpu-blur {
+  transform: translateZ(0);
+  will-change: filter, transform;
+}
