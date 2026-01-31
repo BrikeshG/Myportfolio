@@ -35,12 +35,12 @@ export const PROJECTS = [
         title: 'Healthcare Chatbot',
         subtitle: 'AI-Powered Symptom Assistant',
         tech: ['Python', 'Flask', 'NLP', 'NLTK'],
-        description: 'Engineered an AI-driven symptom diagnostic assistant using NLP algorithms (TF-IDF, N-grams), achieving high precision in intent classification and automated response mapping.',
+        description: "Bachelor's Thesis: Engineered an NLP-driven symptom diagnostic assistant using Python/Flask. Research published on ResearchGate.",
         challenge: 'Optimizing NLP similarity thresholds to maintain high classification accuracy across diverse natural language inputs.',
         metrics: ['80% Response Accuracy', '90% Model Training Success'],
         color: 'purple',
         size: 'large',
-        liveUrl: null,
+        liveUrl: 'https://www.researchgate.net/publication/369939655_BUILDING_A_CHATBOT_FOR_HEALTHCARE_USING_NLP',
         githubUrl: null
     },
     {
