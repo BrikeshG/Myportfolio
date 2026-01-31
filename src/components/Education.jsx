@@ -2,34 +2,11 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { GraduationCap, Award } from 'lucide-react';
 import { staggerContainer, fadeInUp } from '../utils/animations';
+import { EDUCATION, CERTIFICATIONS } from '../constants';
 
 export default function Education() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
-
-    const education = [
-        {
-            degree: 'Graduate Coursework in Computer Science',
-            institution: 'Universität Passau, Germany',
-            period: '04/2024 – 10/2025',
-            color: 'purple',
-            modules: ['Software Engineering', 'Data Science', 'Distributed Systems']
-        },
-        {
-            degree: 'B.E. Computer Science and Engineering',
-            institution: 'Sathyabama University, India',
-            period: '06/2019 – 05/2023',
-            color: 'cyan',
-            modules: ['Data Structures', 'Algorithms', 'OOP', 'Database Management']
-        },
-    ];
-
-    const certifications = [
-        'AWS Solutions Architecture Job Simulation — Forage',
-        'Technology Job Simulation (Coding & Development) — Deloitte',
-        'AWS CLF-C02 Exam Prep — AWS',
-        'Advanced Java Certification — FITA Academy',
-    ];
 
     return (
         <section id="education" className="py-32 px-6 relative overflow-hidden">
@@ -57,7 +34,7 @@ export default function Education() {
                             {/* Timeline line */}
                             <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-cyan-500 to-transparent"></div>
 
-                            {education.map((edu, idx) => (
+                            {EDUCATION.map((edu, idx) => (
                                 <motion.div
                                     key={idx}
                                     variants={fadeInUp}
@@ -104,7 +81,7 @@ export default function Education() {
                             className="glass rounded-2xl p-8 border border-white/10"
                         >
                             <ul className="space-y-4">
-                                {certifications.map((cert, idx) => (
+                                {CERTIFICATIONS.map((cert, idx) => (
                                     <motion.li
                                         key={idx}
                                         variants={fadeInUp}

@@ -30,3 +30,77 @@ export const NAVIGATION = [
     { label: 'Education', href: 'education' },
     { label: 'Contact', href: 'contact' },
 ];
+export const PROJECTS = [
+    {
+        title: 'Healthcare Chatbot',
+        subtitle: 'AI-Powered Symptom Assistant',
+        tech: ['Python', 'Flask', 'NLP', 'NLTK'],
+        description: 'Engineered an AI-driven symptom diagnostic assistant using NLP algorithms (TF-IDF, N-grams), achieving high precision in intent classification and automated response mapping.',
+        challenge: 'Optimizing NLP similarity thresholds to maintain high classification accuracy across diverse natural language inputs.',
+        metrics: ['80% Response Accuracy', '90% Model Training Success'],
+        color: 'purple',
+        size: 'large',
+        liveUrl: null,
+        githubUrl: null
+    },
+    {
+        title: 'TuS Pfarrkirchen Club',
+        subtitle: 'Professional Community Hub',
+        tech: ['React', 'Tailwind', 'Netlify', 'SEO'],
+        description: 'Architected and deployed a production-ready community platform for a sports organization, featuring custom SEO strategies and high-performance UI components.',
+        challenge: 'Implementing advanced SEO techniques and custom domain mapping to secure #1 search visibility for targeted keywords.',
+        metrics: ['#1 Google Search Ranking', 'Perfect Core Web Vitals'],
+        color: 'cyan',
+        size: 'medium',
+        liveUrl: 'https://tus-cricket-pfarrkirchen.de',
+        githubUrl: null
+    },
+    {
+        title: 'Next-Gen Portfolio',
+        subtitle: 'Personal Branding Engine',
+        tech: ['React', 'Vite', 'NLP', 'Framer Motion'],
+        description: 'Developed a high-performance digital showcase with a custom NLP-driven knowledge retrieval system, demonstrating advanced frontend engineering and UX design.',
+        challenge: 'Orchestrating complex Framer Motion animations with a client-side NLP search engine for seamless user interaction.',
+        metrics: ['<100ms Search Latency', 'Fluid 60FPS Performance'],
+        color: 'pink',
+        size: 'medium',
+        liveUrl: null,
+        githubUrl: null
+    },
+    {
+        title: 'AWS Infrastructure',
+        subtitle: 'Cloud Deployment Optimization',
+        tech: ['AWS EC2', 'Windows', 'Cloud'],
+        description: 'Streamlined cloud operations by configuring optimized Windows EC2 environments and implementing robust security group protocols on AWS.',
+        challenge: 'Balancing instance performance with cost-efficiency while ensuring secure, low-latency connectivity for production workloads.',
+        metrics: ['25% Deployment Speedup', 'Zero Downtime Architecture'],
+        color: 'violet',
+        size: 'medium',
+        liveUrl: null,
+        githubUrl: null
+    }
+];
+
+export const EDUCATION = [
+    {
+        degree: 'Graduate Coursework in Computer Science',
+        institution: 'Universität Passau, Germany',
+        period: '04/2025 – 10/2025',
+        color: 'purple',
+        modules: ['Software Engineering', 'Data Science', 'Distributed Systems']
+    },
+    {
+        degree: 'B.E. Computer Science and Engineering',
+        institution: 'Sathyabama University, India',
+        period: '06/2019 – 05/2023',
+        color: 'cyan',
+        modules: ['Data Structures', 'Algorithms', 'OOP', 'Database Management']
+    },
+];
+
+export const CERTIFICATIONS = [
+    'AWS Solutions Architecture Job Simulation — Forage',
+    'Technology Job Simulation (Coding & Development) — Deloitte',
+    'AWS CLF-C02 Exam Prep — AWS',
+    'Advanced Java Certification — FITA Academy',
+];
