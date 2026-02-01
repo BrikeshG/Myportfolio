@@ -95,13 +95,13 @@ export default function Hero() {
                             className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed flex flex-col md:block items-center"
                             variants={fadeInUp}
                         >
-                            <span className="text-white font-bold block mb-1 md:inline-block md:mb-0 md:mr-2">
+                            <div className="text-white font-bold block mb-1 md:inline-block md:mb-0 md:mr-2">
                                 {PERSONAL_INFO.degree.trim()}
-                            </span>
+                            </div>
                             <span className="inline-block md:inline">
-                                Specializing in <span className="text-purple-400 font-semibold">Java</span>,{' '}
+                                Expertise in <span className="text-purple-400 font-semibold">Java</span>,{' '}
                                 <span className="text-cyan-400 font-semibold">Python</span>, and{' '}
-                                <span className="text-pink-400 font-semibold">React</span> | Designing high-performance software solutions
+                                <span className="text-pink-400 font-semibold">React</span> | Building high-performance software solutions
                             </span>
                         </motion.div>
 
@@ -132,6 +132,7 @@ export default function Hero() {
                                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 rounded-full transition-opacity duration-300"></div>
                             </motion.button>
                         </motion.div>
+                        <p className="text-[10px] text-gray-500/20 mt-12 opacity-0 hover:opacity-100 transition-opacity">v2.02.01</p>
                     </motion.div>
                 </div>
             </section>
