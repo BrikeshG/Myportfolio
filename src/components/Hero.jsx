@@ -99,7 +99,7 @@ export default function Hero() {
                                 {PERSONAL_INFO.degree.trim()}
                             </div>
                             <span className="inline-block md:inline">
-                                Mastery in <span className="text-purple-400 font-semibold">Java</span>,{' '}
+                                Expertise in <span className="text-purple-400 font-semibold">Java</span>,{' '}
                                 <span className="text-cyan-400 font-semibold">Python</span>, and{' '}
                                 <span className="text-pink-400 font-semibold">React</span> | Building high-performance software solutions
                             </span>

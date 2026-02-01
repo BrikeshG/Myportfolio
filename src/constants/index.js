@@ -85,7 +85,7 @@ export const EDUCATION = [
     {
         degree: 'Graduate Coursework in Computer Science',
         institution: 'Universität Passau, Germany',
-        period: '04/2024 – 04/2025 (VERIFIED)',
+        period: '04/2024 – 04/2025',
         color: 'purple',
         modules: ['Software Engineering', 'Data Science', 'Distributed Systems']
     },
