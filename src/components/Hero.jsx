@@ -56,7 +56,7 @@ export default function Hero() {
 
     return (
         <>
-            <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24">
+            <section id="home" className="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-36 md:pt-24 pb-32">
                 {/* Animated gradient mesh background - Optimized with will-change */}
                 <div className="absolute inset-0 opacity-30 pointer-events-none">
                     <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-purple-500 rounded-full mix-blend-screen filter blur-[128px] animate-pulse will-change-[filter,transform] transform-gpu"></div>
@@ -65,7 +65,7 @@ export default function Hero() {
                 </div>
 
                 {/* Content */}
-                <div className="max-w-4xl mx-auto px-6 relative z-10 w-full pb-20 md:pb-0">
+                <div className="max-w-4xl mx-auto px-6 relative z-10 w-full">
                     <motion.div
                         className="text-center will-change-transform"
                         initial="hidden"
@@ -95,8 +95,10 @@ export default function Hero() {
                             className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed"
                             variants={fadeInUp}
                         >
-                            <span className="text-white font-bold block mb-2 md:inline md:mb-0">{PERSONAL_INFO.degree}</span>
-                            <span className="md:inline">{' '}Specializing in <span className="text-purple-400 font-semibold">Java</span>,{' '}</span>
+                            <span className="text-white font-bold">{PERSONAL_INFO.degree}</span>
+                            <br className="md:hidden" />
+                            <span className="hidden md:inline">&nbsp;</span>
+                            Specializing in <span className="text-purple-400 font-semibold">Java</span>,{' '}
                             <span className="text-cyan-400 font-semibold">Python</span>, and{' '}
                             <span className="text-pink-400 font-semibold">React</span> | Building high-performance software solutions
                         </motion.p>
