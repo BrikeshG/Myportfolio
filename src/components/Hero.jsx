@@ -56,7 +56,7 @@ export default function Hero() {
 
     return (
         <>
-            <section id="home" className="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-36 md:pt-24 pb-32">
+            <section key="hero-v4" id="home" className="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-32 md:pt-24 pb-32">
                 {/* Animated gradient mesh background - Optimized with will-change */}
                 <div className="absolute inset-0 opacity-30 pointer-events-none">
                     <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-purple-500 rounded-full mix-blend-screen filter blur-[128px] animate-pulse will-change-[filter,transform] transform-gpu"></div>
@@ -91,17 +91,19 @@ export default function Hero() {
                         </motion.h1>
 
                         {/* Subtitle */}
-                        <motion.p
-                            className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed"
+                        <motion.div
+                            className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed flex flex-col md:block items-center"
                             variants={fadeInUp}
                         >
-                            <span className="text-white font-bold">{PERSONAL_INFO.degree}</span>
-                            <br className="md:hidden" />
-                            <span className="hidden md:inline">&nbsp;</span>
-                            Specializing in <span className="text-purple-400 font-semibold">Java</span>,{' '}
-                            <span className="text-cyan-400 font-semibold">Python</span>, and{' '}
-                            <span className="text-pink-400 font-semibold">React</span> | Building high-performance software solutions
-                        </motion.p>
+                            <span className="text-white font-bold block mb-1 md:inline-block md:mb-0 md:mr-2">
+                                {PERSONAL_INFO.degree.trim()}
+                            </span>
+                            <span className="inline-block md:inline">
+                                Specializing in <span className="text-purple-400 font-semibold">Java</span>,{' '}
+                                <span className="text-cyan-400 font-semibold">Python</span>, and{' '}
+                                <span className="text-pink-400 font-semibold">React</span> | Designing high-performance software solutions
+                            </span>
+                        </motion.div>
 
                         {/* CTA Buttons */}
                         <motion.div
@@ -138,7 +140,7 @@ export default function Hero() {
             <AnimatePresence>
                 {showScrollDown && (
                     <motion.div
-                        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer z-40 hidden md:block"
+                        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 cursor-pointer z-40 hidden md:flex"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
