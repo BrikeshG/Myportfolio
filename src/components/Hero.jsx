@@ -65,7 +65,7 @@ export default function Hero() {
                 </div>
 
                 {/* Content */}
-                <div className="max-w-4xl mx-auto px-6 relative z-10 w-full">
+                <div className="max-w-4xl mx-auto px-6 relative z-10 w-full pb-20 md:pb-0">
                     <motion.div
                         className="text-center will-change-transform"
                         initial="hidden"
@@ -95,9 +95,8 @@ export default function Hero() {
                             className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed"
                             variants={fadeInUp}
                         >
-                            <span className="text-white font-bold">{PERSONAL_INFO.degree}</span>
-                            <br className="hidden md:block" />
-                            Specializing in <span className="text-purple-400 font-semibold">Java</span>,{' '}
+                            <span className="text-white font-bold block mb-2 md:inline md:mb-0">{PERSONAL_INFO.degree}</span>
+                            <span className="md:inline">{' '}Specializing in <span className="text-purple-400 font-semibold">Java</span>,{' '}</span>
                             <span className="text-cyan-400 font-semibold">Python</span>, and{' '}
                             <span className="text-pink-400 font-semibold">React</span> | Building high-performance software solutions
                         </motion.p>
