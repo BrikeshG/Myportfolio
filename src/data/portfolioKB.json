@@ -43,7 +43,7 @@
             "passau",
             "sathyabama"
         ],
-        "response": "Brikesh's educational background:\n\n🎓 Graduate Coursework in Computer Science\nUniversität Passau, Germany\nApril 2024 – October 2025\n\n🎓 B.E. Computer Science and Engineering\nSathyabama University, India\nJune 2019 – May 2023"
+        "response": "Brikesh's educational background:\n\n🎓 Graduate Coursework in Computer Science\nUniversität Passau, Germany\nApril 2025 – October 2025\n\n🎓 B.E. Computer Science and Engineering\nSathyabama University, India\nJune 2019 – May 2023"
     },
     "certifications": {
         "keywords": [
@@ -86,7 +86,7 @@
             "developed",
             "created"
         ],
-        "response": "Here are some featured projects Brikesh has worked on:\n\n🏥 Healthcare Chatbot (AI-Powered Symptom Assistant)\nHe built an intelligent healthcare chatbot achieving 80% response accuracy and 90% training accuracy using Python, Flask, NLP, and TF-IDF.\n\n🏏 TuS Pfarrkirchen Club (Community & Sports Hub)\nHe developed and deployed a live community platform, achieving #1 Google search ranking for 'cricket pfarrkirchen'.\n\n🤖 AI-Powered Portfolio (Personal Branding Engine)\nHe engineered this sophisticated showcase featuring a custom NLP-based assistant.\n\n☁️ AWS Cloud Practice (EC2 Instance Setup)\nHe configured optimized Windows EC2 environments and reduced deployment time by 25%."
+        "response": "Here are some featured projects Brikesh has worked on:\n\n🏥 Healthcare Chatbot (Bachelor's Thesis)\nHe engineered an NLP-driven symptom diagnostic assistant using Python/Flask. Research published on ResearchGate.\n\n🏏 TuS Pfarrkirchen Club (Community & Sports Hub)\nHe developed and deployed a live community platform, achieving #1 Google search ranking for 'cricket pfarrkirchen'.\n\n🤖 AI-Powered Portfolio (Personal Branding Engine)\nHe engineered this sophisticated showcase featuring a custom NLP-based assistant.\n\n☁️ AWS Cloud Practice (Academic Internship)\nHe configured Windows EC2 instances and implemented cloud infrastructure setup, reducing deployment time by 25%."
     },
     "healthcare_chatbot": {
         "keywords": [
@@ -99,7 +99,7 @@
             "flask",
             "ai"
         ],
-        "response": "Healthcare Chatbot - AI-Powered Symptom Assistant:\n\nBrikesh built an intelligent healthcare chatbot achieving 80% response accuracy using Python, Flask, NLP preprocessing, and TF-IDF similarity mapping. This project demonstrates his proficiency in natural language processing and machine learning algorithms.\n\nTechnologies: Python, Flask, NLP, NLTK"
+        "response": "Healthcare Chatbot (Bachelor's Thesis):\n\nBrikesh engineered an NLP-driven symptom diagnostic assistant using Python/Flask. This project was completed as his Bachelor's Thesis and the research is published on ResearchGate. It demonstrates his proficiency in NLP preprocessing and TF-IDF similarity mapping.\n\nTechnologies: Python, Flask, NLP, NLTK\nResearch: https://www.researchgate.net/publication/369939655_BUILDING_A_CHATBOT_FOR_HEALTHCARE_USING_NLP"
     },
     "tus_pfarrkirchen": {
         "keywords": [
@@ -136,7 +136,7 @@
             "windows",
             "instance"
         ],
-        "response": "AWS Cloud Practice - EC2 Instance Setup:\n\nBrikesh configured Windows EC2 instances and implemented cloud infrastructure setup, reducing deployment time by 25%. This project highlights his understanding of cloud computing fundamentals.\n\nTechnologies: AWS EC2, Windows, Cloud Infrastructure"
+        "response": "AWS Cloud Practice (Academic Internship):\n\nBrikesh configured Windows EC2 instances and implemented cloud infrastructure setup during an academic internship, reducing deployment time by 25%. This project highlights his understanding of cloud computing fundamentals and security group protocols.\n\nTechnologies: AWS EC2, Windows, Cloud Infrastructure"
     },
     "java": {
         "keywords": [
