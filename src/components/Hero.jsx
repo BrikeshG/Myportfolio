@@ -138,7 +138,7 @@ export default function Hero() {
             <AnimatePresence>
                 {showScrollDown && (
                     <motion.div
-                        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer z-40"
+                        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer z-40 hidden md:block"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
