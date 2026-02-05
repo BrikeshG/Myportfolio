@@ -81,7 +81,7 @@ export default function Navbar() {
                 transition={{ duration: 0.5, ease: "easeOut" }}
             >
                 <div className="flex items-center justify-between px-6 py-4">
-                    <span className="text-lg font-bold gradient-text">BVG</span>
+                    <span className="text-lg font-bold gradient-text">Portfolio</span>
                     <button
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         className="p-2 rounded-lg glass border border-white/10 hover:border-purple-500/50 transition-colors"
