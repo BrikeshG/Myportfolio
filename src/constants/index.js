@@ -41,6 +41,7 @@ export const PROJECTS = [
         color: 'purple',
         size: 'large',
         liveUrl: 'https://www.researchgate.net/publication/369939655_BUILDING_A_CHATBOT_FOR_HEALTHCARE_USING_NLP',
+        linkLabel: 'Research Paper',
         githubUrl: null
     },
     {
